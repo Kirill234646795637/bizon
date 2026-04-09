@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url("menu.css");
+@import url('style2.css');
+@import url("footer.css");
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+
+}/* Временно - покажет красной рамкой проблемные элементы */
+/** {
+    outline: 1px solid red !important;
+}*/
+html {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden; /* Отключает горизонтальный скролл */
+    background-color: #E6E6E6;
+}
+.body {
+    font-family: 'Roboto', sans-serif; /* Использование */
+    width: 100%;
+    max-width: 100%;
+    padding-top: 80px;
+    
+}
+.container {
+    max-width: 1140px;
+    margin: 0px auto;
+}
+        .category-header {
+            text-align: center;
+            padding: 40px 20px 20px;
+        }
+        .category-title {
+            font-size: 36px;
+            color: #164216;
+            margin-bottom: 8px;
+        }
+        .category-desc {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        
+        /* Кнопка "Назад" */
+        .btn-back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            background: #164216;
+            color: #fff;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 14px;
+            transition: background 0.3s, transform 0.2s;
+            margin-bottom: 30px;
+        }
+        .btn-back-link:hover {
+            background: #0d2b0d;
+            transform: translateX(-3px);
+        }

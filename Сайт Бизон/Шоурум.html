@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/CSS/style7.css">
+    <script src="src/JS/script-menu.js"></script>
+    <script src="src/JS/script-shouroom.js"></script>
+    <title>Шоурум</title>
+</head>
+<body>
+    <div class="menu">
+        <!-- Бургер-меню -->
+        <div class="menu-container">
+            <div class="burger-button" id="burgerBtn">
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+            </div>
+            
+            <!-- Выпадающее меню -->
+            <div class="dropdown-menu" id="dropdownMenu">
+                <ul class="menu-list">
+                    <a href="index.html"><li class="menu-item">Главная</li></a>
+                    <a href="Каталог.html"><li class="menu-item">Каталог</li></a>
+                    <a href="Сопутствующие товары.html"><li class="menu-item">Сопутствующие товары</li></a>
+                    <a href="Акции.html"><li class="menu-item">Акции</li></a>
+                    <a href="Проекты.html"><li class="menu-item">Проекты</li></a>
+                    <a href="Стать партнёром.html"><li class="menu-item">Стать партнёром</li></a>
+                    <a href="Шоурум.html"><li class="menu-item">Мобильный шоурум</li></a>
+                </ul>
+            </div>
+        </div>
+        <img class="logo" src="src/images/icons/logo.jpg" alt="Логотип БиЗон">
+        <div class="icons">
+            <a href="https://vk.com/bezon44"><img class="icons-item" src="src/images/icons/Social Icons.png" alt="VK"></a>
+            <a href=""><img class="icons-item" src="src/images/icons/Social IconsTG.png" alt="Telegram"></a>
+            <a href=""><img class="icons-item" src="src/images/icons/image 2.png" alt="MAX"></a>
+        </div>
+        <h1 class="menu-number">8-905-153-70-00</h1>
+    </div>
+
+    <!-- ПЕРВЫЙ БЛОК: Герой с фоновым изображением и наложенным текстом -->
+  <section class="hero" id="hero">
+    <img class="hero__bg" src="src/images/shouroom/shouroom_image.jpg" alt="" onerror="this.style.display='none'">
+    
+    <!-- Затемняющий оверлей для читаемости -->
+    <div class="hero__overlay"></div>
+    
+    <!-- Контент поверх изображения -->
+    <div class="hero__content fade-in">
+      <h1 class="hero__title">
+        Привезем образцы напольных покрытий и другой продукции в любую точку Москвы и области
+      </h1>
+      <!-- Кнопка с якорной ссылкой (замените #your-anchor на нужный вам якорь) -->
+      <a href="#your-anchor" class="hero__btn">оставить заявку</a>
+    </div>
+  </section>
+
+  <!-- ВТОРОЙ БЛОК: Как работает мобильный шоу-рум -->
+  <section class="steps" id="how-it-works">
+    <div class="container">
+      <h2 class="steps__title fade-in">Как работает мобильный шоу-рум</h2>
+      
+      <div class="steps__grid">
+        <div class="step-card fade-in">
+          <div class="step-card__number">1</div>
+          <p class="step-card__text">Выбираете образцы из каталога</p>
+        </div>
+        
+        <div class="step-card fade-in">
+          <div class="step-card__number">2</div>
+          <p class="step-card__text">Выбираете удобную дату и время доставки</p>
+        </div>
+        
+        <div class="step-card fade-in">
+          <div class="step-card__number">3</div>
+          <p class="step-card__text">К вам приезжает мобильный шоу-рум с менеджером и образцами</p>
+        </div>
+        
+        <div class="step-card fade-in">
+          <div class="step-card__number">4</div>
+          <p class="step-card__text">Примеряете образцы на объекте</p>
+        </div>
+        
+        <div class="step-card fade-in">
+          <div class="step-card__number">5</div>
+          <p class="step-card__text">Менеджер подготавливает КП</p>
+        </div>
+        
+        <div class="step-card fade-in">
+          <div class="step-card__number">6</div>
+          <p class="step-card__text">Вы оформляете заказ</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="contact-container">
+
+    <div class="contact-wrapper">
+        <!-- Форма -->
+        <!-- Форма контакта -->
+<div class="contact-container">
+    <h2 class="contact-title">Связаться с нами</h2>
+    
+    <div class="contact-wrapper">
+        <form id="contactForm" class="contact-form">
+            <div class="form-group">
+                <label class="form-label">ФИО<span class="required">*</span></label>
+                <input type="text" name="fio" class="form-input" placeholder="Иван Петров Алексеевич" required>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Ваш город<span class="required">*</span></label>
+                <input type="text" name="city" class="form-input" placeholder="Кострома" required>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="data">Дата и удобное время<span class="required">*</span></label>
+                <input class="form-input" type="text" id="data" name="data" placeholder="Например: 15.04.2026 в 14:00" required>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Телефон<span class="required">*</span></label>
+                <input type="tel" name="phone" class="form-input" placeholder="(+7)-999-900-00-00" required>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="comment">Ваш комментарий</label>
+                <textarea id="comment" name="comment" class="form-textarea" placeholder="Дополнительная информация..."></textarea>
+            </div>
+
+            <div id="your-anchor" style="height: 1px; margin-top: -1px;"></div>
+
+            <button type="submit" class="submit-btn" id="submitBtn">Отправить</button>
+            
+            <div id="formMessage" class="message"></div>
+        </form>
+    </div>
+</div>
+    <!-- Лог отладки -->
+    <div class="debug-log" id="debugLog"></div>
+</div>
+</div>
+    <!-- === МОДАЛЬНОЕ ОКНО === -->
+<div id="modalOverlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:9998;"></div>
+
+<div id="modalWindow" class="modal" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%, -50%); background:white; padding:40px; border-radius:12px; box-shadow:0 10px 40px rgba(0,0,0,0.3); z-index:9999; max-width:500px; width:90%; text-align:center;">
+    <button class="modal-close" style="position:absolute; top:15px; right:20px; font-size:28px; color:#999; background:none; border:none; cursor:pointer; line-height:1;">&times;</button>
+    <h2 id="modalTitle" style="margin:0 0 20px 0; font-size:28px; color:#333;"></h2>
+    <p id="modalMessage" style="margin:0 0 30px 0; font-size:16px; line-height:1.6; color:#666;"></p>
+    <button onclick="closeModal()" style="background:#4CAF50; color:white; border:none; padding:12px 40px; font-size:16px; border-radius:6px; cursor:pointer; transition:background 0.3s;">Закрыть</button>
+</div>
+</body>
+</html>
