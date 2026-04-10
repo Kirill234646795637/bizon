@@ -465,3 +465,135 @@ body {
         padding: 0 10px;
     }
 }
+/* Адаптация под 480px */
+@media (max-width: 480px) {
+  .header {
+    padding-top: 100px;
+    height: auto;
+    min-height: 500px;
+  }
+  
+  .top-text {
+    top: 20px;
+    width: 90%;
+    padding: 0 10px;
+  }
+  
+  .top-text h1 {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+  
+  .top-text p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .bottom-text {
+    bottom: 20px;
+    width: 90%;
+    font-size: 14px;
+    line-height: 1.6;
+    padding: 0 10px;
+  }
+  
+  .arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+  
+  .arrow-left {
+    left: 10px;
+  }
+  
+  .arrow-right {
+    right: 10px;
+  }
+  
+  .indicators {
+    bottom: 70px;
+    gap: 8px;
+  }
+  
+  .indicator {
+    width: 10px;
+    height: 10px;
+  }
+  
+  .container__about-us {
+    padding: 20px 10px 30px;
+    min-height: auto;
+  }
+  
+  .container__about-us h1 {
+    font-size: 28px;
+    margin-top: 15px;
+  }
+  
+  .about-us__cards {
+    flex-direction: column;
+    padding-top: 20px;
+    gap: 25px;
+  }
+  
+  .about-us__cards-1,
+  .about-us__cards-2,
+  .about-us__cards-3 {
+    width: 100%;
+    max-width: 280px;
+  }
+  
+  .cards-items__icons {
+    width: 100%;
+    max-width: 200px;
+    height: 180px;
+    margin-bottom: 15px;
+  }
+  
+  .cards-items__heading {
+    font-size: 18px;
+  }
+  
+  .cards-items p {
+    font-size: 14px;
+    padding-top: 10px;
+    width: 100%;
+  }
+  
+  .container__advantages {
+    padding: 30px 15px 40px;
+  }
+  
+  .container__advantages h1 {
+    font-size: 26px;
+    margin-bottom: 25px;
+  }
+  
+  .advantages__cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .advantages__card-1,
+  .advantages__card-2,
+  .advantages__card-3 {
+    width: 100%;
+    max-width: 100%;
+    min-height: auto;
+  }
+  
+  .advantages__cards img {
+    height: 180px;
+  }
+  
+  .advantages__text {
+    font-size: 14px;
+    padding: 15px;
+  }
+  
+  .advantages__text2 {
+    font-size: 14px;
+    padding: 0 10px 15px;
+  }
+}
