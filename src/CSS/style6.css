@@ -255,6 +255,7 @@ textarea[aria-invalid="true"] {
     .image-placeholder {
         flex: 1;
         height: 300px;
+        display: none;
     }
     #modalWindow {
         padding: 30px 20px !important;
