@@ -266,3 +266,60 @@ textarea[aria-invalid="true"] {
         font-size: 14px !important;
     }
 }
+/* ========================
+   АДАПТАЦИЯ ПОД 480PX
+   ======================== */
+@media (max-width: 480px) {
+  .main-text {
+    font-size: 32px;
+    padding-top: 100px;
+  }
+
+  .text-stock {
+    font-size: 24px;
+    padding-bottom: 100px;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .row.reverse {
+    flex-direction: column;
+  }
+
+  .image-block {
+    flex: 0 0 auto;
+    width: 100%;
+    height: 200px;
+  }
+
+  .text-block {
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .text-block p {
+    font-size: 14px;
+    text-align: left;
+    line-height: 1.5;
+  }
+
+  .contact-container {
+    padding: 20px 15px;
+  }
+
+  .contact-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .submit-btn {
+    width: 100%;
+  }
+}
