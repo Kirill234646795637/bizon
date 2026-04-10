@@ -61,3 +61,25 @@ html {
             background: #0d2b0d;
             transform: translateX(-3px);
         }
+/* Адаптация под 480px */
+@media (max-width: 480px) {
+  .category-header {
+    padding: 20px 15px 15px;
+  }
+  
+  .category-title {
+    font-size: 24px;
+    margin-bottom: 6px;
+  }
+  
+  .category-desc {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .btn-back-link {
+    padding: 8px 16px;
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+}
