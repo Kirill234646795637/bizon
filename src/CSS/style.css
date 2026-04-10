@@ -468,9 +468,8 @@ body {
 /* Адаптация под 480px */
 @media (max-width: 480px) {
   .header {
-    padding-top: 100px;
-    height: auto;
-    min-height: 500px;
+    padding-top: 60px;
+    height: 1000px;
   }
   
   .top-text {
