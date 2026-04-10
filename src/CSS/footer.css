@@ -1,48 +1,200 @@
 .container__footer {
-    min-height: 400px; /* Используйте min-height */
-    background-color: #164216;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Центрирует содержимое футера */
-    padding: 40px 0;
+  min-height: 400px;
+  background-color: #164216;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 20px;
 }
+
 .footer__logo {
-    display: flex;
-    justify-content: center;
-    padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
 }
+
 .footer__logo img {
-    width: 115px;
-    height: 115px;
-    border-radius: 500px;
+  width: 115px;
+  height: 115px;
+  border-radius: 500px;
 }
+
 .logo-text {
-    font-size: 30px;
-    color: #E6E6E6;
-    text-align: center;
-    margin-top: 5px;
+  font-size: 30px;
+  color: #E6E6E6;
+  text-align: center;
+  margin-top: 5px;
 }
+
 .footer__icons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
 }
+
 .footer__icons img {
-    margin: 5px;
-    margin-left: 15px;
-    margin-right: 15px
+  margin: 5px 15px;
+  max-width: 40px;
+  height: auto;
 }
+
 .basement-number {
-    color: #E6E6E6;
-    font-size: 35px;
-    text-align: center;
-    margin: 5px;
-    font-weight: normal;
+  color: #E6E6E6;
+  font-size: 35px;
+  text-align: center;
+  margin: 10px 0;
+  font-weight: normal;
+  word-break: break-word;
 }
+
 .basement-email {
-    color: #E6E6E6;
-    font-size: 35px;
-    text-align: center;
+  color: #E6E6E6;
+  font-size: 35px;
+  text-align: center;
+  margin-top: 5px;
+  font-weight: normal;
+  word-break: break-all;
+}
+
+/* ========================
+   АДАПТАЦИЯ ПОД ПЛАНШЕТЫ (до 1024px)
+   ======================== */
+@media (max-width: 1024px) {
+  .container__footer {
+    min-height: 350px;
+    padding: 30px 20px;
+  }
+  
+  .footer__logo img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .logo-text {
+    font-size: 26px;
+  }
+  
+  .basement-number {
+    font-size: 30px;
+  }
+  
+  .basement-email {
+    font-size: 28px;
+  }
+}
+
+/* ========================
+   АДАПТАЦИЯ ПОД МОБИЛЬНЫЕ (до 768px)
+   ======================== */
+@media (max-width: 768px) {
+  .container__footer {
+    min-height: 300px;
+    padding: 25px 15px;
+  }
+  
+  .footer__logo img {
+    width: 90px;
+    height: 90px;
+  }
+  
+  .logo-text {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  
+  .footer__icons {
+    gap: 5px;
+  }
+  
+  .footer__icons img {
+    margin: 5px 10px;
+    max-width: 35px;
+  }
+  
+  .basement-number {
+    font-size: 26px;
+    margin: 8px 0;
+  }
+  
+  .basement-email {
+    font-size: 22px;
     margin-top: 5px;
-    font-weight: normal;
+  }
+}
+
+/* ========================
+   АДАПТАЦИЯ ПОД 480PX И МЕНЬШЕ
+   ======================== */
+@media (max-width: 480px) {
+  .container__footer {
+    min-height: auto;
+    padding: 20px 15px;
+  }
+  
+  .footer__logo img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .logo-text {
+    font-size: 20px;
+    margin-top: 8px;
+  }
+  
+  .footer__icons {
+    flex-direction: row;
+    gap: 5px;
+    margin: 15px 0;
+  }
+  
+  .footer__icons img {
+    margin: 3px 8px;
+    max-width: 30px;
+    height: auto;
+  }
+  
+  .basement-number {
+    font-size: 22px;
+    margin: 8px 0;
+    line-height: 1.3;
+  }
+  
+  .basement-email {
+    font-size: 18px;
+    margin-top: 5px;
+    line-height: 1.3;
+  }
+}
+
+/* ========================
+   АДАПТАЦИЯ ПОД ОЧЕНЬ МАЛЕНЬКИЕ ЭКРАНЫ (до 375px)
+   ======================== */
+@media (max-width: 375px) {
+  .container__footer {
+    padding: 15px 10px;
+  }
+  
+  .footer__logo img {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .logo-text {
+    font-size: 18px;
+  }
+  
+  .footer__icons img {
+    margin: 3px 5px;
+    max-width: 28px;
+  }
+  
+  .basement-number {
+    font-size: 20px;
+  }
+  
+  .basement-email {
+    font-size: 16px;
+  }
 }
